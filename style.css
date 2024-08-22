@@ -149,3 +149,21 @@ main {
     }
   }
 
+@media (max-width: 1120px) {
+    main {
+        padding: 3.5rem 2.8rem 3.5rem;
+    }
+
+    .screen1 img {
+        width: 20rem;
+    }
+
+    .screen2 .message {
+        margin-bottom: 3rem;
+    }
+
+    .screen2 img {
+        width: 25rem;
+        margin-bottom: 3rem;
+    }
+}
