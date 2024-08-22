@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    color: #34355B;
+
+    background-image: url(./assets/luckBiscuit.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    height: 100vh;
+
+    display: grid;
+    place-items: center;
+}
+
+body, button {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.6rem;
+}
+
+main {
+    width: min(42.8rem, 90%);
+    padding: 4.8rem 6.4rem 6.4rem;
+    
+    background: #FFF;
+
+    border-radius: 0.5rem;
+    box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.80);
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+/*screen1*/
+
+.screen1 h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    margin-bottom: 1.4rem;
+}
+
+.screen1 p {
+    margin-bottom: 2rem;
+}
+
+/* screen2 */
+
+.screen2 h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    margin-bottom: 1.4rem;
+}
+
+.screen2 .message {
+    background: #E4EDF1;
+    box-shadow: .2rem .2rem .2rem 0 rgba(85, 85, 85, 0.50);
+    padding: 1rem;
+    margin-bottom: 6rem;
+}
+
+.screen2 p {
+    font-family: "Dancing Script";
+    font-size: 2.4rem;
+    color: #000;
+}
+
+.screen2 img {
+    margin-bottom: 6rem;
+}
+
+.screen2 button {
+    padding: 1.6rem;
+    
+    border: none;
+    border-radius: 4px;
+
+    background: #FF9500;
+
+    font-weight: 700;
+    color: #FFF;
+}
+
+.screen2 button:hover {
+    scale: 1.05;
+}
+
+/* Animations */
+
+.screen2 .message {
+    animation: move 1.5s, grow 2s;
+    --startY: 50rem;
+    --finishY: 0
+}
+
+@keyframes move {
+    from {
+        transform: translateY(var(--startY));      
+    }
+    to {
+        transform: translateY(var(--finishY));
+    }
+}
+
+@keyframes grow {
+    from {
+        visibility: 0;
+        scale: 0.3;
+    }
+    to {
+        visibility: 1;
+        scale: 1;
+    }
+}
+
+#btnClick:hover {
+    animation: vibrate 0.15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes vibrate {
+    0% {
+      margin-left: 0;
+    }
+    25% {
+      margin-left: 1rem;
+    }
+    50% {
+      margin-left: 0;
+    }
+    75% {
+      margin-left: -1rem;
+    }
+    100% {
+      margin-left: 0;
+    }
+  }
+
