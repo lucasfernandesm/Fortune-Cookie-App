@@ -37,7 +37,7 @@ This project was developed with the following technologies:
 
   - With just one click, the application generates a lucky phrase for the user </br>
   - Layout with attractive and fun animations </br>
-  - Responsive design, better user experience </br>
+  - Responsive design, capable of adapting to different screen sizes, better user experience </br>
   - Project developed during the Full-stack Training course via the platform [Rocketseat](https://app.rocketseat.com.br) </br>
 
   <br><br>
