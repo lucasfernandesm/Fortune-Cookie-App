@@ -16,11 +16,15 @@ Fortune cookie app, page that randomly generates a lucky phrase for the user wit
 
 <br><br>
 <h1 align="center">
-  <img alt="Fortune cookie project" src="./assets/FortuneCookieBanner1.png" width="600"/>
+  <img alt="Fortune cookie project" src="./assets/FortuneCookieBanner1.png" width="500"/>
 </h1>
 
 <h1 align="center">
-  <img alt="Fortune cookie project" src="./assets/FortuneCookieBanner2.png" width="600"/>
+  <img alt="Fortune cookie project" src="./assets/FortuneCookieBanner2.png" width="500"/>
+</h1>
+
+<h1 align="center">
+  <img alt="Fortune cookie project" src="./assets/FortuneCookieBanner3.png" width="500"/>
 </h1>
 
 <br><br>
