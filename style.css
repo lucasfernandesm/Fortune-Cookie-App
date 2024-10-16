@@ -13,6 +13,7 @@
     --background-main: #16232E;
     --background-button: #CC8D1A;
     --background-screen: #164C45;
+    --background-footer: #CC8D1A;
     --background-blur-title: rgba(97, 95, 102, 0);
     --background-blur-title-mobile: rgba(40, 35, 49, 0.575);
 }
@@ -41,7 +42,8 @@ body, button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
+    text-align: left;
     gap: 3rem;
 
     padding: 2rem;
@@ -88,7 +90,7 @@ main {
     box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.80);
     background-color: var(--background-screen);
 }
-.screen1 h1 {
+.screen1 h2 {
     font-size: 2.4rem;
     font-weight: 700;
     margin-bottom: 1.4rem;
@@ -108,7 +110,7 @@ main {
     background-color: var(--background-screen);
 }
 
-.screen2 h1 {
+.screen2 h2 {
     font-size: 2.4rem;
     font-weight: 700;
     margin-bottom: 1.4rem;
@@ -145,6 +147,57 @@ main {
     scale: 1.05;
 }
 
+.history {
+    background-image: url(./assets/backgroundHistory.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    padding: 9rem;
+}
+
+.storieText {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 4rem;
+    color: var(--text-border);
+    background: rgba(50, 49, 53, 0.842);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2rem 5rem 0 rgb(0, 0, 0);
+    border: 2px solid var(--text-border);
+    border-radius: 2rem;
+}
+
+.storieText h2 {
+    text-align: center;
+}
+
+.storieText h3 {
+    text-align: center;
+}
+
+.storieText p {
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-blue);
+    background-color: var(--background-footer);
+}
+
+
 .hide {
     display: none;
 }
@@ -170,6 +223,10 @@ main {
     .screen2 {
         padding: 3rem 2rem;
     }
+
+    .history {
+        padding: 3rem;
+    }
 }
 
 @media (max-width:500px) { 
@@ -193,6 +250,18 @@ main {
 
     .screen2 img {
         width: 24rem;
+    }
+
+    .storieText {
+        padding: 2.5rem;
+    }
+
+    .storieText p {
+        text-align: left;
+    }
+
+    footer {
+        font-size: 1.2rem;
     }
 }
 
