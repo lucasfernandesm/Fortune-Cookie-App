@@ -34,7 +34,7 @@ This project was developed with the following technologies:
 - [HTML]
 - [CSS]
 - [JavaScript]
-- [Git and Github]
+- [Git]
 
 <br><br>
 <h2 align="left" id="Project"> <img src=https://github.com/user-attachments/assets/7ac4a526-7c35-4f2d-a851-413c7f515e2c alt="Project Icon" style="width:28px;">&nbsp;&nbsp; Project </h2>
@@ -42,7 +42,6 @@ This project was developed with the following technologies:
   - With just one click, the application generates a lucky phrase for the user </br>
   - Layout with attractive and fun animations </br>
   - Responsive design, capable of adapting to different screen sizes, better user experience </br>
-  - Project developed during the Full-stack Training course via the platform [Rocketseat](https://app.rocketseat.com.br) </br>
 
   <br><br>
 <h2 align="left" id="Link-to-view"> <img src=https://github.com/user-attachments/assets/01c56b54-2205-4397-8f3a-ee4474e317ff alt="ProjectIcon" style="width:26px;">&nbsp;&nbsp;   Link to view </h2>
