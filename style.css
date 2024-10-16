@@ -6,32 +6,65 @@
 
 :root {
     font-size: 62.5%;
-}
 
-body {
-    color: #34355B;
-
-    background-image: url(./assets/luckBiscuit.jpg);
-    background-size: cover;
-    background-position: center;
-    
-    height: 100vh;
-
-    display: grid;
-    place-items: center;
+    --text: #E3C75F; 
+    --text-border: #CC8D1A;
 }
 
 body, button {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.6rem;
+    color: var(--text);
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/backgroundBanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.banner .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    padding: 2rem;
+    max-width: 50%;
+    background: rgba(97, 95, 102, 0);
+    backdrop-filter: blur(5px);
+    border-radius: 2rem;
+    border: 1px solid var(--text);
+}
+
+.banner .title h1 {
+    font-family: "Palanquin Dark", sans-serif;
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 7rem;
+    -webkit-text-stroke: 2px var(--text-border);
+}
+
+.banner .title h2 {
+    font-size: 3rem;
+}
+
+.banner .title p {
+    font-size: 2.2rem;
 }
 
 main {
     width: min(42.8rem, 90%);
     padding: 4.8rem 6.4rem 6.4rem;
-    
-    background: #FFF;
-
     border-radius: 0.5rem;
     box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.80);
     text-align: center;
@@ -44,10 +77,8 @@ main {
 /*screen1*/
 
 .screen1 h1 {
-    font-family: "Montserrat", sans-serif;
     font-size: 2.4rem;
     font-weight: 700;
-
     margin-bottom: 1.4rem;
 }
 
@@ -58,22 +89,18 @@ main {
 /* screen2 */
 
 .screen2 h1 {
-    font-family: "Montserrat", sans-serif;
     font-size: 2.4rem;
     font-weight: 700;
-
     margin-bottom: 1.4rem;
 }
 
 .screen2 .message {
-    background: #E4EDF1;
     box-shadow: .2rem .2rem .2rem 0 rgba(85, 85, 85, 0.50);
     padding: 1rem;
     margin-bottom: 6rem;
 }
 
 .screen2 p {
-    font-family: "Dancing Script";
     font-size: 2.4rem;
     color: #000;
 }
@@ -97,6 +124,54 @@ main {
 .screen2 button:hover {
     scale: 1.05;
 }
+
+@media (max-width:768px) {
+    .banner .title {
+        padding: 1rem;
+    }
+    
+    .banner .title h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    
+    .banner .title h2 {
+        font-size: 2.2rem;
+    }
+    
+    .banner .title p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width:500px) { 
+    .banner {
+        justify-content: center;
+    }
+    .banner .title {
+        max-width: 100% ;
+        background: rgba(40, 35, 49, 0.575);
+        backdrop-filter: blur(10px);
+        border-radius: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Animations */
 
